@@ -1,0 +1,10 @@
+
+FROM node:18-alpine
+
+WORKDIR /app
+
+RUN npm init -y
+RUN npm install y-websocket@1.5.4 ws
+
+EXPOSE 1234
+CMD ["node", "./node_modules/y-websocket/bin/server.js"]
