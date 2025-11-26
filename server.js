@@ -21,5 +21,5 @@ wss.on('connection', (conn, req) => {
 });
 
 server.listen(port, () => {
-  console.log(`✅ Servidor CRDT (v1.5) escuchando en el puerto ${port}`);
+  console.log(`Servidor CRDT (v1.5) escuchando en el puerto ${port}`);
 });

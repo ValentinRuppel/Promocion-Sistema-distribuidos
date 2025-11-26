@@ -21,7 +21,7 @@ wsProvider.on('status', event => {
 // 2. Datos Compartidos
 const inventario = doc.getMap('inventario');
 
-// 3. Observabilidad (Lo que pide la consigna)
+// 3. Observabilidad
 inventario.observe(() => {
   console.log('\n--- ESTADO ACTUALIZADO ---');
   console.log(inventario.toJSON());
