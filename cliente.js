@@ -18,7 +18,6 @@ wsProvider.on('status', event => {
   console.log(`[Red] Estado: ${event.status}`);
 });
 
-// 2. Datos Compartidos
 const inventario = doc.getMap('inventario');
 
 // 3. Observabilidad
